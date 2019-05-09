@@ -1,0 +1,127 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.bw</groupId>
+	<artifactId>mybatis-spring-parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+
+	<properties>
+		<!-- spring 版本号 -->
+		<spring.version>4.3.23.RELEASE</spring.version>
+		<!-- junit 版本号 -->
+		<junit.version>4.12</junit.version>
+		<!-- mysql 版本号 -->
+		<mysql.version>5.1.47</mysql.version>
+		<!-- 阿里连接池版本号 -->
+		<druid.version>1.1.16</druid.version>
+		<!-- logback 版本号 -->
+		<logback.version>1.1.2</logback.version>
+		<!-- mybatis 版本号 -->
+		<mybatis.version>3.5.1</mybatis.version>
+		<!--mybatis 与sprig结合包 -->
+		<mybatis_spring.version>2.0.1</mybatis_spring.version>
+		<pagehelper.version>5.1.8</pagehelper.version>
+	</properties>
+	<dependencies>
+		<!-- spring 包：（context,aop,beans,core,expression,logging） -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- spring aspects 包（aspects，aspectjweaver） -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- spring jdbc 包 （spring jdbc，tx） -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- spring mvc 包：（webmvc,web） -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- spring test 包 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- junit 包（junit，hamcrest-core） -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+		</dependency>
+		<!-- aopalliance 包 -->
+		<dependency>
+			<groupId>aopalliance</groupId>
+			<artifactId>aopalliance</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<!-- mysql包 -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
+		<!-- 阿里数据库连接池包 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>${druid.version}</version>
+		</dependency>
+		<!-- 阿里处理字符串json （fastjson，core） -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.57</version>
+		</dependency>
+		<!-- 日志logback （lockback-access,logback-core） -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-access</artifactId>
+			<version>${logback.version}</version>
+		</dependency>
+		<!--logback logback包（loassic，slf4j-api） -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logback.version}</version>
+		</dependency>
+		<!-- mybaits -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>${mybatis.version}</version>
+		</dependency>
+		<!-- mybatis spring -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>${mybatis_spring.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper -->
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper</artifactId>
+			<version>${pagehelper.version}</version>
+		</dependency>
+		<!-- 通用的mapper  -->
+		<dependency>
+			<groupId>com.github.abel533</groupId>
+			<artifactId>mapper</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+	</dependencies>
+
+</project>
